@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 
+        // function countDigits(number) {
+        //     // Convert the number to a string to handle negative numbers
+        //     let num = Math.abs(number);
+        //     let count = 0;
+
+        //     do {
+        //         count++;
+        //         num = Math.floor(num / 10);
+        //     } while (num > 0);
+
+        //     return count;
+        // }
+
+        // // Example usage
+        // let number = 12345;
+        // console.log("Number of digits:", countDigits(number)); // Output: Number of digits: 5
+        //   
+
+        // function factorial(n) {
+        //     if (n < 0) {
+        //         return "Factorial is not defined for negative numbers.";
+        //     }
+        //     let result = 1;
+        //     let i = n;
+        //     while (i > 1) {
+        //         result *= i;
+        //         i--;
+        //     }
+        //     return result;
+        // }
+
+        // // Example usage  
+        // console.log(factorial(5)); // Output: 120  
+        // console.log(factorial(0)); // Output: 1  
+        // console.log(factorial(-3)); // Output: "Factorial is not defined for negative numbers."
+        // function factorial(n) {
+        //     if (n < 0) {
+        //         return "Factorial is not defined for negative numbers.";
+        //     }
+        //     let result = 1;
+        //     let i = n;
+        //     while (i > 1) {
+        //         result *= i;
+        //         i--;
+        //     }
+        //     return result;
+        // }
+
+        // // Example usage  
+        // console.log(factorial(5)); // Output: 120  
+        // console.log(factorial(0)); // Output: 1  
+        // console.log(factorial(-3)); // Output: "Factorial is not defined for negative numbers."
+
+        // 
+
+        // function reverseNumber(num) {
+        //     let reversed = 0;
+        //     let original = Math.abs(num); // Handle negative numbers  
+
+        //     while (original > 0) {
+        //         const digit = original % 10; // Get the last digit  
+        //         reversed = (reversed * 10) + digit; // Append the digit  
+        //         original = Math.floor(original / 10); // Remove the last digit  
+        //     }
+
+        //     return num < 0 ? -reversed : reversed; // Restore the sign for negative numbers  
+        // }
+
+        // // Example usage  
+        // const number = 12345;
+        // const reversedNumber = reverseNumber(number);
+        // console.log(reversedNumber); // Outputs: 54321
+
+        // 
+
+        // let count = 1;
+        // let evenNumbersCount = 0;
+
+        // do {
+        //     if (count % 2 === 0) {
+        //         evenNumbersCount++;
+        //     }
+        //     count++;
+        // } while (count <= 20);
+
+        // console.log(evenNumbersCount);
+        // 
+        let count = 21; // Start from the first odd number greater than 20
+        let oddNumbers = [];
+
+        while (count < 40) {
+            oddNumbers.push(count);
+            count += 2; // Move to the next odd number
+        }
+
+        console.log(oddNumbers); // This will output all odd numbers between 20 and 40.
+    </script>
+</body>
+
+</html>
